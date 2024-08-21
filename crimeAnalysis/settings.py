@@ -27,7 +27,7 @@ load_dotenv(os.path.join(BASE_DIR/".eVar",".env"))
 SECRET_KEY = 'django-insecure-yq$6_dt@mej#e25_kxvd^&w&_3^^x+$l)_b)nad$&)cl5(v*o6'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ["127.0.0.1","localhost","*"]
 # ALLOWED_HOSTS += os.environ.get("ALLOWED_HOSTS").split()
@@ -125,8 +125,8 @@ if DEBUG:
         os.path.join(BASE_DIR,'templates/css')
     ]
 else:
-    STATIC_ROOT=os.path.join(BASE_DIR,'templates/css')
-
+    STATIC_ROOT=os.path.join(BASE_DIR,'static')
+# STATIC_ROOT=os.path.join(BASE_DIR,'static')
 # STATIC_ROOT= os.path.join('accept')
 
 
