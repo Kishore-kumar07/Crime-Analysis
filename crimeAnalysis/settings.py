@@ -27,7 +27,7 @@ load_dotenv(os.path.join(BASE_DIR/".eVar",".env"))
 SECRET_KEY = 'django-insecure-yq$6_dt@mej#e25_kxvd^&w&_3^^x+$l)_b)nad$&)cl5(v*o6'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = os.environ.get("DEBUG")
+DEBUG = False
 
 ALLOWED_HOSTS = ["127.0.0.1","localhost","*"]
 # ALLOWED_HOSTS += os.environ.get("ALLOWED_HOSTS").split()
@@ -120,10 +120,17 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
 STATIC_URL = 'static/'
-STATICFILES_DIRS= [
-    os.path.join(BASE_DIR,'templates/css'),
-]
-STATIC_ROOT= os.path.join('accept')
+if DEBUG:
+    STATICFILES_DIRS= [
+        os.path.join(BASE_DIR,'templates/css')
+    ]
+else:
+    STATIC_ROOT=os.path.join(BASE_DIR,'templates/css')
+
+# STATIC_ROOT= os.path.join('accept')
+
+
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
