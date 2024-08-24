@@ -29,41 +29,42 @@
         </div>
         <div class="row g-5">
             <div class="col-lg-4 col-md-6" id="alarm-div">
-                <div class="service-item bg-secondary text-center px-5">
-                    <div class="d-flex align-items-center justify-content-center bg-primary text-white rounded-circle mx-auto mb-4" style="width: 90px; height: 90px;">
-                        <i class="fa fa-user-tie fa-2x"></i>
+                <a href="/alarm" class="service-item-link">
+                    <div class="service-item bg-secondary text-center px-5">
+                        <div class="d-flex align-items-center justify-content-center bg-primary text-white rounded-circle mx-auto mb-4" style="width: 90px; height: 90px;">
+                            <i class="fa fa-user-tie fa-2x"></i>
+                        </div>
+                        <h3 class="mb-3">Alarm Prediction</h3>
+                        <p class="mb-0">Predict high alarm crime zones.</p>
                     </div>
-                    <h3 class="mb-3">Business Research</h3>
-                    <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor ipsum amet eos erat ipsum lorem et sit sed stet lorem</p>
-                </div>
+                </a>
             </div>
             <div class="col-lg-4 col-md-6">
-                <div class="service-item bg-secondary text-center px-5">
-                    <div class="d-flex align-items-center justify-content-center bg-primary text-white rounded-circle mx-auto mb-4" style="width: 90px; height: 90px;">
-                        <i class="fa fa-chart-pie fa-2x"></i>
+                <a href="/prob" class="service-item-link">
+                    <div class="service-item bg-secondary text-center px-5">
+                        <div class="d-flex align-items-center justify-content-center bg-primary text-white rounded-circle mx-auto mb-4" style="width: 90px; height: 90px;">
+                            <i class="fa fa-chart-pie fa-2x"></i>
+                        </div>
+                        <h3 class="mb-3">Probability of Arrest</h3>
+                        <p class="mb-0">Probability of arrest based on crime.</p>
                     </div>
-                    <h3 class="mb-3">Stretagic Planning</h3>
-                    <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor ipsum amet eos erat ipsum lorem et sit sed stet lorem</p>
-                </div>
+                </a>
             </div>
             <div class="col-lg-4 col-md-6">
-                <div class="service-item bg-secondary text-center px-5">
-                    <div class="d-flex align-items-center justify-content-center bg-primary text-white rounded-circle mx-auto mb-4" style="width: 90px; height: 90px;">
-                        <i class="fa fa-chart-line fa-2x"></i>
+                <a href="/crimepred" class="service-item-link">
+                    <div class="service-item bg-secondary text-center px-5">
+                        <div class="d-flex align-items-center justify-content-center bg-primary text-white rounded-circle mx-auto mb-4" style="width: 90px; height: 90px;">
+                            <i class="fa fa-chart-line fa-2x"></i>
+                        </div>
+                        <h3 class="mb-3">Crime Prediction</h3>
+                        <p class="mb-0">Predicting the crime based on the description.</p>
                     </div>
-                    <h3 class="mb-3">Market Analysis</h3>
-                    <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor ipsum amet eos erat ipsum lorem et sit sed stet lorem</p>
-                </div>
+                </a>
             </div>
         </div>
     </div>
     <!-- Services End -->
-    <script>
-        document.getElementById('alarm-div').addEventListener('click', function() {
-            window.location.href = '/alarm';
-        });
-    </script>
-    
+
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="{% static 'owlcarousel/owl.carousel.min.js'%}"></script>
